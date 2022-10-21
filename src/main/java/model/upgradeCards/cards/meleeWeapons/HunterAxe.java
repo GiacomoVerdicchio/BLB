@@ -1,11 +1,8 @@
 package model.upgradeCards.cards.meleeWeapons;
 
 import java.io.*;
-
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.upgradeCards.UpgradeCard;
-import model.upgradeCards.nameUpgradeEnum;
 
 public class HunterAxe extends UpgradeCard {
 

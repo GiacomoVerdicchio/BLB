@@ -15,4 +15,5 @@ public abstract class UpgradeCard {
     public nameUpgradeEnum getNameCode() {
         return nameCode;
     }
+    public String getName() { return name; }
 }
