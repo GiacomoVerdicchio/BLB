@@ -6,6 +6,6 @@ import model.upgradeCards.nameUpgradeEnum;
 public class Transformation extends UpgradeCard {
     public Transformation()
     {
-        this.name= nameUpgradeEnum.Transformation;
+        this.nameCode = nameUpgradeEnum.Transformation;
     }
 }

@@ -23,7 +23,7 @@ public class HandDeck {
     public static UpgradeCard pickCard(nameUpgradeEnum nameOfCard , ArrayList<UpgradeCard> deck)
     {
         for(UpgradeCard card : deck)
-            if (card.getName() == nameOfCard)
+            if (card.getNameCode() == nameOfCard)
                 return card;
         return null;
     }

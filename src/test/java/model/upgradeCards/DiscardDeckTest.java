@@ -17,7 +17,7 @@ public class DiscardDeckTest {
 
         dc.addToDiscardPile(tc);
         assertEquals(1,dc.getDiscardPile().size());
-        assertEquals(tc.name,dc.getDiscardPile().get(0).name);
+        assertEquals(tc.nameCode,dc.getDiscardPile().get(0).nameCode);
         dc.removeFromDiscard(tc);
         assertEquals(0,dc.getDiscardPile().size());
 

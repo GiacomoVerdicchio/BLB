@@ -1,8 +1,10 @@
 package model.upgradeCards;
 
 public abstract class UpgradeCard {
+
     protected String description;
-    protected nameUpgradeEnum name;
+    protected nameUpgradeEnum nameCode; //Used to identify easily the type of object
+    protected String name;
 
 
     //public abstract void effect(CurrentGameState cg);
@@ -10,7 +12,7 @@ public abstract class UpgradeCard {
     public String getDescription() {
         return description;
     }
-    public nameUpgradeEnum getName() {
-        return name;
+    public nameUpgradeEnum getNameCode() {
+        return nameCode;
     }
 }

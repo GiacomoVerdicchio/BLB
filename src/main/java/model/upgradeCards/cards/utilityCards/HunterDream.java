@@ -6,6 +6,6 @@ import model.upgradeCards.nameUpgradeEnum;
 public class HunterDream extends UpgradeCard {
     public HunterDream()
     {
-        this.name= nameUpgradeEnum.HunterDream;
+        this.nameCode = nameUpgradeEnum.HunterDream;
     }
 }

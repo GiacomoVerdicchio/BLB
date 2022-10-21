@@ -5,19 +5,27 @@ import java.io.*;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.upgradeCards.UpgradeCard;
+import model.upgradeCards.nameUpgradeEnum;
 
 public class HunterAxe extends UpgradeCard {
+
+    private int damage;
+
+    public HunterAxe() {}
 
     public void populatingHuntAxe()
     {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            String path="C:/Users/giaco/OneDrive/Desktop/Pc e Informatica 2/Bloodborne/src/main/resources/model/upgradeCards/meleeWeapon/HunterAxe.json";
-            HunterAxe hunterAxe = mapper.readValue(new File(path),HunterAxe.class);
-            this.name=hunterAxe.name;
+            String path="src/main/resources/model/upgradeCards/cards/meleeWeapon/HunterAxe.json";
+            HunterAxe hunterAxeTemp = mapper.readValue(new File(path),HunterAxe.class);
+
+            this.name = hunterAxeTemp.name;
+            this.nameCode= hunterAxeTemp.nameCode;
+            this.description=hunterAxeTemp.description;
+            this.damage=hunterAxeTemp.damage;
 
         } catch (IOException e) {
-            e.printStackTrace();
             throw new RuntimeException(e);
         }
 

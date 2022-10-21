@@ -6,7 +6,7 @@ import model.upgradeCards.nameUpgradeEnum;
 public class ToothedCleaver extends UpgradeCard {
     public ToothedCleaver()
     {
-        this.name= nameUpgradeEnum.ToothedCleaver;
+        this.nameCode = nameUpgradeEnum.ToothedCleaver;
         this.description="A very useful weapon";
     }
 

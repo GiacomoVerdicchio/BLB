@@ -13,6 +13,6 @@ public class HunterAxeTest {
         axe=new HunterAxe();
         axe.populatingHuntAxe();
 
-        System.out.println("Name : "+axe.getName());
+        System.out.println(axe.getNameCode()+": "+axe.getDescription());
     }
 }
