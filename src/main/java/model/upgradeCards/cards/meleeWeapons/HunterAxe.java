@@ -8,24 +8,24 @@ public class HunterAxe extends UpgradeCard {
 
     private int damage;
 
-    public HunterAxe() {}
-
-    public void populatingHuntAxe()
+    public void populating()
     {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            String path="src/main/resources/model/upgradeCards/cards/meleeWeapon/HunterAxe.json";
+
+            String path="src/main/resources/meleeWeapons/HunterAxe.json";
             HunterAxe hunterAxeTemp = mapper.readValue(new File(path),HunterAxe.class);
 
-            this.name = hunterAxeTemp.name;
-            this.nameCode= hunterAxeTemp.nameCode;
-            this.description=hunterAxeTemp.description;
-            this.damage=hunterAxeTemp.damage;
+            this.name = hunterAxeTemp.getName();
+            this.nameCode= hunterAxeTemp.getNameCode();
+            this.description=hunterAxeTemp.getDescription();
+            this.damage=hunterAxeTemp.getDamage();
 
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
+
+    public int getDamage() {return damage;}
 }
 
