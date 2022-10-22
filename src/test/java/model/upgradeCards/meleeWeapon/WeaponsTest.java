@@ -4,7 +4,7 @@ import model.upgradeCards.cards.meleeWeapons.HunterAxe;
 import model.upgradeCards.cards.meleeWeapons.ToothedCleaver;
 import org.junit.Test;
 
-public class weaponTests {
+public class WeaponsTest {
 
     HunterAxe axe;
     ToothedCleaver tcl;
@@ -13,7 +13,6 @@ public class weaponTests {
     public void testConstructorAxe()
     {
         axe=new HunterAxe();
-        axe.populating();
 
         System.out.println(axe.getName()+": "+axe.getDescription()+" damage: "+axe.getDamage());
     }
@@ -21,7 +20,6 @@ public class weaponTests {
     public void testConstructorCleaver()
     {
         tcl=new ToothedCleaver();
-        tcl.populating();
 
         System.out.println(tcl.getName()+": "+tcl.getDescription()+" damage: "+tcl.getDamage()+" (code: "+ tcl.getNameCode()+")");
     }

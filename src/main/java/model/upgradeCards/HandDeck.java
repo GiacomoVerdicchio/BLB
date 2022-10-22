@@ -1,26 +1,24 @@
 package model.upgradeCards;
 
-import model.upgradeCards.cards.rangedWeapons.*;
-import model.upgradeCards.cards.meleeWeapons.*;
-import model.upgradeCards.cards.utilityCards.*;
-
 import java.util.ArrayList;
 
 public class HandDeck {
     private ArrayList<UpgradeCard> deck;
 
+
     public HandDeck()
     {
-        deck=new ArrayList<UpgradeCard>();
-        deck.add(new ToothedCleaver());
-        deck.add(new Transformation());
-        deck.add(new HunterPistol());
-        deck.add(new HunterDream());
-        deck.add(new HunterAxe());
+        deck= new ArrayList<>();
+
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[0]));
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[1]));
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[2]));
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[3]));
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[4]));
     }
 
 
-    public static UpgradeCard pickCard(nameUpgradeEnum nameOfCard , ArrayList<UpgradeCard> deck)
+    public static UpgradeCard pickCard(NameUpgradeEnum nameOfCard , ArrayList<UpgradeCard> deck)
     {
         for(UpgradeCard card : deck)
             if (card.getNameCode() == nameOfCard)
@@ -28,21 +26,18 @@ public class HandDeck {
         return null;
     }
 
-
-    public void addToDeck(UpgradeCard upgradeCard)
-    {
-        deck.add(upgradeCard);
-    }
+    public void addToDeck(NameUpgradeEnum nameUpgradeEnum){ deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[0]));}
+    public void addToDeck(UpgradeCard upgradeCard) { deck.add(upgradeCard); }
     public void removeFromDeck(UpgradeCard upgradeCard){deck.remove(upgradeCard);}
-    public void removeFromDeck(nameUpgradeEnum nameOfCard,HandDeck deck){
-        deck.getDeck().remove(pickCard(nameOfCard,deck.getDeck()));
+    public void removeFromDeck(NameUpgradeEnum nameOfCard){
+        this.getDeck().remove(pickCard(nameOfCard,this.getDeck()));
     }
     public void moveToDiscard(UpgradeCard upgradeCard, DiscardDeck discardDeck)
     {
         deck.remove(upgradeCard);
         discardDeck.addToDiscardPile(upgradeCard);
     }
-    public void moveToDiscard(nameUpgradeEnum nameOfCard, DiscardDeck discardDeck)
+    public void moveToDiscard(NameUpgradeEnum nameOfCard, DiscardDeck discardDeck)
     {
         UpgradeCard up=pickCard(nameOfCard,deck);
         deck.remove(up);
@@ -55,8 +50,5 @@ public class HandDeck {
             deck.remove(0);
     }
 
-    public ArrayList<UpgradeCard> getDeck()
-    {
-        return deck;
-    }
+    public ArrayList<UpgradeCard> getDeck() { return deck; }
 }

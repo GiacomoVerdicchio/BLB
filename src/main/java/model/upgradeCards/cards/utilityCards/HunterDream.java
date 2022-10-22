@@ -1,11 +1,9 @@
 package model.upgradeCards.cards.utilityCards;
 
-import model.upgradeCards.UpgradeCard;
-import model.upgradeCards.nameUpgradeEnum;
 
-public class HunterDream extends UpgradeCard {
-    public HunterDream()
-    {
-        this.nameCode = nameUpgradeEnum.HunterDream;
-    }
+
+import java.io.Serializable;
+
+public class HunterDream extends UtilityCards implements Serializable {
+
 }
