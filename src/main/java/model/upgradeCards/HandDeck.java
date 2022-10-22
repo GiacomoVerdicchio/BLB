@@ -32,6 +32,11 @@ public class HandDeck {
     public void removeFromDeck(NameUpgradeEnum nameOfCard){
         this.getDeck().remove(pickCard(nameOfCard,this.getDeck()));
     }
+    public void removeFromDeck(int index)
+    {
+        this.getDeck().remove(index);
+    }
+
     public void moveToDiscard(UpgradeCard upgradeCard, DiscardDeck discardDeck)
     {
         deck.remove(upgradeCard);
