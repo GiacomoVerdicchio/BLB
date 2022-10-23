@@ -1,4 +1,4 @@
-package model.upgradeCards.cards.meleeWeapons.AllOthers;
+package model.upgradeCards.cards.meleeWeapons;
 
 import model.upgradeCards.cards.meleeWeapons.MeleeWeapons;
 

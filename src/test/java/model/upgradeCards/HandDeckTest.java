@@ -1,7 +1,7 @@
 package model.upgradeCards;
 
-import model.upgradeCards.cards.meleeWeapons.*;
-import model.upgradeCards.cards.utilityCards.*;
+import model.upgradeCards.cards.basicCards.SawCleaver;
+import model.upgradeCards.cards.basicCards.Transformation;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

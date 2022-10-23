@@ -1,4 +1,6 @@
-package model.upgradeCards.cards.rangedWeapons;
+package model.upgradeCards.cards.basicCards;
+
+import model.upgradeCards.cards.rangedWeapons.RangedWeapons;
 
 import java.io.Serializable;
 

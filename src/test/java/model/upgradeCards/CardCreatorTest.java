@@ -8,6 +8,6 @@ public class CardCreatorTest {
     public void Test()
     {
         UpgradeCard card=CardCreator.getRightCard(NameUpgradeEnum.SawCleaver);
-        System.out.println(card.getNameCode());
+        //System.out.println(card.getNameCode());
     }
 }

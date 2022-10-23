@@ -3,18 +3,18 @@ package model.upgradeCards;
 public enum NameUpgradeEnum {
     SawCleaver,
     HunterAxe,
+    HunterPistol,
+    HunterDream,
+    Transformation,
+
     SawSpear,
     ThreadedCane,
 
 
-
-    HunterPistol,
     FlameSprayer,
     HunterBlunderbuss,
 
 
-    HunterDream,
-    Transformation,
     BloodVial
 
 

@@ -1,6 +1,6 @@
 package model.upgradeCards;
 
-import model.upgradeCards.cards.meleeWeapons.SawCleaver;
+import model.upgradeCards.cards.basicCards.SawCleaver;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

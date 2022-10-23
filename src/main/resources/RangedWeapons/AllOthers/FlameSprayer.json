@@ -1,8 +1,8 @@
 {
-  "EnglishName":"Flame Sprayer",
-  "ItalianName": "Lanciafiamme",
-  "EnglishDescription":"Whenever hunters who played a melee weapon take damage, they take double",
-  "ItalianDescription": "Ogni volta che i cacciatori che hanno giocato un'arma da mischia prendono danno ne prendono il doppio",
+  "englishName":"Flame Sprayer",
+  "italianName": "Lanciafiamme",
+  "englishDescription":"Whenever hunters who played a melee weapon take damage, they take double",
+  "italianDescription": "Ogni volta che i cacciatori che hanno giocato un'arma da mischia prendono danno ne prendono il doppio",
   "nameCode": "FlameSprayer",
   "damage": 2
 }

@@ -1,8 +1,0 @@
-{
-  "EnglishName":"Hunter Pistol",
-  "ItalianName": "Pistola del Cacciatore",
-  "EnglishDescription;":"INSTANT EFFECT: if you are the only hunter to play Hunter Pistol inflict damage immediately, instead of in the Hunters Attack Step",
-  "ItalianDescription;": "EFFETTO INSTANTANEO: se sei l'unico cacciatore a giocare una Pistola del Cacciatore infliggi danno immediato, piuttosto che nella fase di attacco dei cacciatori",
-  "nameCode": "HunterPistol",
-  "damage": 1
-}

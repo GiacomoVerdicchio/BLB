@@ -1,4 +1,4 @@
-package model.upgradeCards.cards.rangedWeapons.AllOthers;
+package model.upgradeCards.cards.rangedWeapons;
 
 import model.upgradeCards.cards.rangedWeapons.RangedWeapons;
 

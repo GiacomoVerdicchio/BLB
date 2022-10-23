@@ -16,11 +16,7 @@ public class UpgradeDeck {
         upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[2]));
         upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[3]));
         upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[4]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[0]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[1]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[2]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[3]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[4]));
+
 
         Collections.shuffle(upgradeDeck);
 

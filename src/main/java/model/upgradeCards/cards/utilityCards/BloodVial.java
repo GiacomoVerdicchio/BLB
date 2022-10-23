@@ -1,4 +1,4 @@
-package model.upgradeCards.cards.utilityCards.AllOthers;
+package model.upgradeCards.cards.utilityCards;
 
 import model.upgradeCards.cards.utilityCards.UtilityCards;
 

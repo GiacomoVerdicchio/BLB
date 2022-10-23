@@ -14,6 +14,6 @@ public class DiceTest {
     public void testDice1()
     {
         constructDice1();
-        System.out.println("\n"+d.rollDice());
+        //System.out.println("\n"+d.rollDice());
     }
 }
