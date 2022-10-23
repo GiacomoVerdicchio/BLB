@@ -1,0 +1,7 @@
+{
+  "EnglishName":"Blood Vial",
+  "ItalianName": "Fiala di sangue",
+  "EnglishDescription":"INSTANCT EFFECT: heal to full health. Also take 1 unbanked blood echo from each hunter with more total blood echos than you (if they have any)",
+  "ItalianDescription": "EFFETTO INSTANTANEO: curati fino al massimo della vita. Inoltre prendi 1 eco del sangue da ogni cacciatore che ha un totale di echi del sangue maggiore del tuo (se ne ha)",
+  "nameCode": "BloodVial"
+}

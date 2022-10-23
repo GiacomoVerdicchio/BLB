@@ -1,6 +1,6 @@
 package model.upgradeCards;
 
-import model.upgradeCards.cards.meleeWeapons.ToothedCleaver;
+import model.upgradeCards.cards.meleeWeapons.SawCleaver;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -12,7 +12,7 @@ public class DiscardDeckTest {
     public void construct()
     {
         dc=new DiscardDeck();
-        ToothedCleaver tc=new ToothedCleaver();
+        SawCleaver tc=new SawCleaver();
 
 
         dc.addToDiscardPile(tc);

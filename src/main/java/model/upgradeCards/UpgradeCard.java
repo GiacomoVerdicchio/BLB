@@ -1,22 +1,29 @@
 package model.upgradeCards;
 
-public abstract class UpgradeCard {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-    protected String description;
+import java.io.Serializable;
+
+public abstract class UpgradeCard implements Serializable
+{
+    protected String EnglishName;
+    protected String ItalianName;
+    protected String EnglishDescription;
+    protected String ItalianDescription;
+
     protected NameUpgradeEnum nameCode; //Used to identify easily the type of object
-    protected String name;
-    public static final int numberOfWeapons=5;
-    public static final int numberOfRangedWeapons=1;
-    public static final int numberOfMeleeWeapons=2;
-    public static final int numberOfUtilityCards=2;
 
     //public abstract void effect(CurrentGameState cg);
 
-    public String getDescription() {
-        return description;
+    public String getEnglishDescription() {
+        return EnglishDescription;
+    }
+    public String getItalianDescription() {
+        return ItalianDescription;
     }
     public NameUpgradeEnum getNameCode() {
         return nameCode;
     }
-    public String getName() { return name; }
+    public String getEnglishName() { return EnglishName; }
+    public String getItalianName() { return ItalianName; }
 }

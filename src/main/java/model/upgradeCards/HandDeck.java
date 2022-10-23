@@ -10,11 +10,12 @@ public class HandDeck {
     {
         deck= new ArrayList<>();
 
+        //TODO ogni volta che aggiungo devo aggiornare gli indici iniziali
         deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[0]));
         deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[1]));
-        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[2]));
-        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[3]));
         deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[4]));
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[7]));
+        deck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[8]));
     }
 
 

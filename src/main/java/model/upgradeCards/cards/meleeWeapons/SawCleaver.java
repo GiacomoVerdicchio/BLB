@@ -2,6 +2,6 @@ package model.upgradeCards.cards.meleeWeapons;
 
 import java.io.Serializable;
 
-public class ToothedCleaver extends MeleeWeapons implements Serializable {
+public class SawCleaver extends MeleeWeapons implements Serializable {
 
 }

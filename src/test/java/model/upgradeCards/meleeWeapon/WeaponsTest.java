@@ -1,26 +1,28 @@
 package model.upgradeCards.meleeWeapon;
 
+import model.upgradeCards.CardCreator;
+import model.upgradeCards.NameUpgradeEnum;
 import model.upgradeCards.cards.meleeWeapons.HunterAxe;
-import model.upgradeCards.cards.meleeWeapons.ToothedCleaver;
+import model.upgradeCards.cards.meleeWeapons.SawCleaver;
 import org.junit.Test;
 
 public class WeaponsTest {
 
     HunterAxe axe;
-    ToothedCleaver tcl;
+    SawCleaver tcl;
 
     @Test
     public void testConstructorAxe()
     {
-        axe=new HunterAxe();
-
-        System.out.println(axe.getName()+": "+axe.getDescription()+" damage: "+axe.getDamage());
+        axe= (HunterAxe) CardCreator.getRightCard(NameUpgradeEnum.values()[1]);
+        axe.getDamage();
+        System.out.println(axe.getEnglishName()+": "+axe.getEnglishDescription()+" damage: "+axe.getDamage());
     }
     @Test
     public void testConstructorCleaver()
     {
-        tcl=new ToothedCleaver();
+        tcl=new SawCleaver();
 
-        System.out.println(tcl.getName()+": "+tcl.getDescription()+" damage: "+tcl.getDamage()+" (code: "+ tcl.getNameCode()+")");
+        System.out.println(tcl.getEnglishName()+": "+tcl.getEnglishDescription()+" damage: "+tcl.getDamage()+" (code: "+ tcl.getNameCode()+")");
     }
 }

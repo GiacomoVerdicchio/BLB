@@ -2,6 +2,7 @@ package model.upgradeCards;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.upgradeCards.cards.meleeWeapons.*;
+import model.upgradeCards.cards.meleeWeapons.AllOthers.SawSpear;
 import model.upgradeCards.cards.rangedWeapons.*;
 import model.upgradeCards.cards.utilityCards.*;
 
@@ -11,8 +12,10 @@ import java.nio.file.Path;
 
 public class CardCreator {
 
-    public static int numberOfRangedWeapons=UpgradeCard.numberOfRangedWeapons;
-    public static int numberOfMeleeWeapons=UpgradeCard.numberOfMeleeWeapons;
+    public static final int numberOfWeapons=5;
+    public static final int numberOfMeleeWeapons=4;
+    public static final int numberOfRangedWeapons=3;
+    public static final int numberOfUtilityCards=3;
 
 
     public static UpgradeCard getRightCard(NameUpgradeEnum type)
@@ -27,8 +30,9 @@ public class CardCreator {
 
             card = switch (type) {
                 //ARMI DA MISCHIA
-                case ToothedCleaver -> mapper.readerFor(ToothedCleaver.class).readValue(str);
+                case SawCleaver -> mapper.readerFor(SawCleaver.class).readValue(str);
                 case HunterAxe -> mapper.readerFor(HunterAxe.class).readValue(str);
+                case SawSpear -> mapper.readerFor(SawSpear.class).readValue(str);
 
                 //ARMI RANGED
                 case HunterPistol -> mapper.readerFor(HunterPistol.class).readValue(str);
