@@ -1,0 +1,9 @@
+{
+  "name": ["Fluorescent Flower","Fiore Fluorescente"],
+  "description": ["When revelead each hunter take 1 damage",
+    "Quando rivelato ogni cacciatore subisce 1 danno"],
+  "nameBeast": "FluorescentFlower",
+  "baseBloodEchos": 4,
+  "dice": 0,
+  "trophy":[0]
+}

@@ -1,0 +1,9 @@
+{
+  "name": ["Rome, the Vacuous Spider ","Rom, il Ragno Ottuso"],
+  "description": ["The second time each hunter is killed they are eliminated from the game",
+    "Quando un cacciatore viene ucciso per la seconda volta è eliminato dal gioco"],
+  "nameBeast": "RomTheVacuousSpider",
+  "baseBloodEchos": 12,
+  "dice": 2,
+  "trophy":[0,1,2]
+}

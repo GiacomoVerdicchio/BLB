@@ -1,0 +1,9 @@
+{
+  "name": ["Scourge Beast","Belva della piaga"],
+  "description": ["When revealed the hunter (s) with the most card in hand take 2 damage",
+    "Quando rivelato il cacciatore o i cacciatori con il maggior numero di carte in mano subiscono 2 danni"],
+  "nameBeast": "ScourgeBeast",
+  "baseBloodEchos": 6,
+  "dice": 2,
+  "trophy":[2]
+}

@@ -3,7 +3,7 @@ package model.beast;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.beast.finalBosses.VicarAmelia;
+import model.beast.finalBosses.*;
 import model.beast.normal.*;
 import model.beast.bosses.*;
 
@@ -13,9 +13,9 @@ import java.nio.file.Path;
 
 public class CreatorBeasts {
 
-    public static int numNormalBeasts=6;
-    public static int numBosses=3;
-    public static int numFinalBosses=1;
+    public static int numNormalBeasts=14;
+    public static int numBosses=6;
+    public static int numFinalBosses=5;
 
     public static Beast getRightCard(NameBeastsEnum type)
     {
@@ -37,15 +37,32 @@ public class CreatorBeasts {
                 case GardenOfEyes -> mapper.readerFor(GardenOfEyes.class).readValue(str);
                 case HunterMinion -> mapper.readerFor(HunterMinion.class).readValue(str);
                 case BeastPossessedSoul -> mapper.readerFor(BeastPossesedSoul.class).readValue(str);
+
                 case BeastPatient -> mapper.readerFor(BeastPatient.class).readValue(str);
+                case ManeaterBoar -> mapper.readerFor(ManeaterBoar.class).readValue(str);
+                case ScourgeBeast -> mapper.readerFor(ScourgeBeast.class).readValue(str);
+                case Huntsman -> mapper.readerFor(Huntsman.class).readValue(str);
+                case FluorescentFlower -> mapper.readerFor(FluorescentFlower.class).readValue(str);
+
+                case ChurchServant -> mapper.readerFor(ChurchServant.class).readValue(str);
+                case Executioner -> mapper.readerFor(Executioner.class).readValue(str);
+                case Brainsucker -> mapper.readerFor(Brainsucker.class).readValue(str);
+                case Scholars-> mapper.readerFor(Scholars.class).readValue(str);
 
                 //BOSSES
                 case TheWitchOfHemwick ->mapper.readerFor(TheWitchOfHemwick.class).readValue(str);
                 case ClericBeast -> mapper.readerFor(ClericBeast.class).readValue(str);
                 case MartyrLogarius -> mapper.readerFor(MartyrLogarius.class).readValue(str);
+                case TheOneReborn -> mapper.readerFor(TheOneReborn.class).readValue(str);
+                case Ebrietas -> mapper.readerFor(Ebrietas.class).readValue(str);
+                case WatchDogOfTheOldLords -> mapper.readerFor(WatchDogOfTheOldLords.class).readValue(str);
+
                 //FINAL BOSSES
                 case VicarAmelia -> mapper.readerFor(VicarAmelia.class).readValue(str);
-
+                case GehrmanTheFirstHunter -> mapper.readerFor(GehrmanTheFirstHunter.class).readValue(str);
+                case MergosWetNurse -> mapper.readerFor(MergosWetNurse.class).readValue(str);
+                case RomTheVacuousSpider -> mapper.readerFor(RomTheVacuousSpider.class).readValue(str);
+                case MicolashHostOfTheNightmare -> mapper.readerFor(MicolashHostOfTheNightmare.class).readValue(str);
             };
 
         }

@@ -1,0 +1,9 @@
+{
+  "name": ["Church Servant","Servitore della Chiesa"],
+  "description": ["When revealed the hunter or hunters with the lowest total blood echoes take 2 blood echoes from the reserve",
+    "Quando rivelato il cacciatore o i cacciatori con il minor numero di echi del sangue raccolgono 2 echi del sangue dalla riserva"],
+  "nameBeast": "ChurchServant",
+  "baseBloodEchos": 5,
+  "dice": 0,
+  "trophy":[1]
+}

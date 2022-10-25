@@ -1,0 +1,9 @@
+{
+  "name": ["The One Reborn","Il rinato"],
+  "description": ["Each hunter that inflicts damage to this collect 2 additional Blood echos from the reserve",
+                  "Ogni cacciatore che infligge danni a questa carta riceve 2 echi del sangue aggiuntivi (dalla riserva)"],
+  "nameBeast": "TheOneReborn",
+  "baseBloodEchos": 11,
+  "dice": 1,
+  "trophy":[0,1]
+}

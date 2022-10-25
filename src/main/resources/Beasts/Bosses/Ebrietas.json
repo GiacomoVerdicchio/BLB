@@ -1,0 +1,9 @@
+{
+  "name": ["Ebrietas","Ebrietas"],
+  "description": ["Melee weapons that deal damage to this ALSO deal the same damage to the hunter on your left",
+    "Le armi da mischia che infloggono danni a questo boss infliggono gli stessi danni ANCHE al cacciatore alla propria sinistra"],
+  "nameBeast": "Ebrietas",
+  "baseBloodEchos": 6,
+  "dice": 2,
+  "trophy":[2]
+}

@@ -1,0 +1,9 @@
+{
+  "name": ["MergosWetNurse","Balia di Mergo"],
+  "description": ["At the begging of each round,each hunter gains 1 health (up to their maximum health)",
+    "All'inizio di ogni round ogni cacciatore ottiene 1 salute (non oltre il suo valore massimo di salute)"],
+  "nameBeast": "MergosWetNurse",
+  "baseBloodEchos": 17,
+  "dice": 1,
+  "trophy":[0,1,2]
+}

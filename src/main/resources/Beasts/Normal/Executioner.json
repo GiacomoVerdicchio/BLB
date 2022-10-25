@@ -1,0 +1,9 @@
+{
+  "name": ["Executioner","Carnefice"],
+  "description": ["If it escapes each hunter take 1 damage for each of their unbanked blood echoes",
+                  "Se fugge ogni cacciatore subisce 1 danno per ogni suo eco del sangue non custodito"],
+  "nameBeast": "Executioner",
+  "baseBloodEchos": 5,
+  "dice": 1,
+  "trophy":[1]
+}

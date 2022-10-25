@@ -1,0 +1,9 @@
+{
+  "name": ["Huntsman","Cacciatore"],
+  "description": ["When revelead the hunter (s) with the fewest total Blood collects 3 blood echos from the reserve",
+    "Quando rivelato il cacciatore o i cacciatori con il minor numero di echi del sangue raccolgono 3 echi del sangue dalla riserva"],
+  "nameBeast": "Huntsman",
+  "baseBloodEchos": 4,
+  "dice": 0,
+  "trophy":[1]
+}

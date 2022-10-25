@@ -1,0 +1,9 @@
+{
+  "name": ["Maneater Boar","Cinghiale Mangiauomini"],
+  "description": ["If this escape each hunter loses 1 trophy of their highest type",
+    "Se fugge ogni cacciatore perde 1 trofeo del tipo con il totale più alto indicato dal suo contatore trofei"],
+  "nameBeast": "ManeaterBoar",
+  "baseBloodEchos": 3,
+  "dice": 2,
+  "trophy":[2]
+}

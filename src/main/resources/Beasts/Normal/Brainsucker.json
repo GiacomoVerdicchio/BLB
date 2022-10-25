@@ -1,0 +1,9 @@
+{
+  "name": ["Brainsucker","Succhiacervelli"],
+  "description": ["If this escape each hunter must discard 2 weapon cards to their used pile, if possible",
+                  "Se fugge ogni cacciatore deve scartare 2 carte arma nella sua pila delgli scarti, se possibile"],
+  "nameBeast": "Brainsucker",
+  "baseBloodEchos": 5,
+  "dice": 1,
+  "trophy":[0]
+}

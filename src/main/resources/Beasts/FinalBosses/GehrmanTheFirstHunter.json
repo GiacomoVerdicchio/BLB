@@ -1,0 +1,10 @@
+{
+  "name": ["Gehrman, The First Hunter","Gehrman, il Primo Cacciatore"],
+  "description": [
+    "All other monsters and bosses enter play with 2 addictional blood echoes",
+    "Tutti i mostri e i boss entrano in gioco con 2 echi del sangue aggiuntivi (Gehrman escluso)"],
+  "nameBeast": "GehrmanTheFirstHunter",
+  "baseBloodEchos": 14,
+  "dice": 1,
+  "trophy":[0,1,2]
+}

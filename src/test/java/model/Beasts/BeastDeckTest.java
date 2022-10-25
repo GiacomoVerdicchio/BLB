@@ -13,7 +13,7 @@ public class BeastDeckTest {
     {
         BeastsDeck bd;
         bd=new BeastsDeck();
-        assertEquals(3,bd.getBeastsDeck().size());
+        assertEquals(7,bd.getBeastsDeck().size());
 
         //Test messo in pausa per aggiungere mostri
 

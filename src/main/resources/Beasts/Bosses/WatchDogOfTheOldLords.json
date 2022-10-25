@@ -1,0 +1,9 @@
+{
+  "name": ["Watch Dog of the Old Lords","Custode degli antichi signori"],
+  "description": ["Each ranged weapon deals a maximum of 1 damage against this",
+    "Ogni arma a distanza infligge un massimo di 1 danno contro questo boss"],
+  "nameBeast": "WatchDogOfTheOldLords",
+  "baseBloodEchos": 12,
+  "dice": 2,
+  "trophy":[0,2]
+}

@@ -1,0 +1,9 @@
+{
+  "name": ["Micolash, Host Of The Nightmare","Micolash, Signore dell' Incubo"],
+  "description": ["Whenever a monster escapes, add 1 random non-boss monster from the box to the top of the chalice dungeon deck",
+    "Ogni volta che un mostro fugge, prendi 1 mostro non boss casuale dalla scatola e aggiungilo in cima al mazzo del sottorraneo del calice"],
+  "nameBeast": "MicolashHostOfTheNightmare",
+  "baseBloodEchos": 14,
+  "dice": 1,
+  "trophy":[0,1,2]
+}

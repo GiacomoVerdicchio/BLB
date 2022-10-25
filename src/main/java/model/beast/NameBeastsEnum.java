@@ -7,14 +7,30 @@ public enum NameBeastsEnum {
     GardenOfEyes,
     HunterMinion,
     BeastPossessedSoul,
+
     BeastPatient,
+    ManeaterBoar,
+    ScourgeBeast,
+    Huntsman,
+    FluorescentFlower,
+
+    ChurchServant,
+    Executioner,
+    Brainsucker,
+    Scholars,
 
     //BOSSES
     TheWitchOfHemwick,
     ClericBeast,
     MartyrLogarius,
+    TheOneReborn,
+    WatchDogOfTheOldLords,
+    Ebrietas,
 
     //FINAL BOSSES
-    VicarAmelia
-
+    VicarAmelia,
+    GehrmanTheFirstHunter,
+    MergosWetNurse,
+    RomTheVacuousSpider,
+    MicolashHostOfTheNightmare
 }

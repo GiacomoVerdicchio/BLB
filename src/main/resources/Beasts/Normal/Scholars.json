@@ -1,0 +1,9 @@
+{
+  "name": ["Scholars","Studiosi"],
+  "description": ["When revealed each hunter take 1 new upgrade, in the player's order. Then replace the available upgrades",
+    "Quando rivelato ogni cacciatore ottiene 1 nuovo potenziamento, nell'ordine dei giocatori. Poi rifornite i potenziamenti disponibili"],
+  "nameBeast": "Scholars",
+  "baseBloodEchos": 3,
+  "dice": 0,
+  "trophy":[0]
+}
