@@ -33,7 +33,7 @@ public class CreatorBeasts {
             card = switch (type) {
                 //NORMAL BEASTS
                 case BloodyCrowOfCainhurst -> mapper.readerFor(BloodyCrowOfCainhurst.class).readValue(str);
-                case CarrionCrows -> mapper.readerFor(ScavengerCrows.class).readValue(str);
+                case CarrionCrows -> mapper.readerFor(CarrionCrows.class).readValue(str);
                 case GardenOfEyes -> mapper.readerFor(GardenOfEyes.class).readValue(str);
                 case HunterMinion -> mapper.readerFor(HunterMinion.class).readValue(str);
                 case BeastPossessedSoul -> mapper.readerFor(BeastPossesedSoul.class).readValue(str);

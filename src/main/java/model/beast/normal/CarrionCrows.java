@@ -4,5 +4,5 @@ import model.beast.NormalBeast;
 
 import java.io.Serializable;
 
-public class ScavengerCrows extends NormalBeast implements Serializable {
+public class CarrionCrows extends NormalBeast implements Serializable {
 }
