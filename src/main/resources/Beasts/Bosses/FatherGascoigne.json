@@ -1,0 +1,9 @@
+{
+  "name": ["Father Gascoigne","Padre Gascoigne"],
+  "description": ["Any weapon cards that inflict damage to this is removed from the game at the end of the round",
+    "Qualsiasi carta arma che infligga danno a questo boss viene rimossa dal gioco alla fine del round"],
+  "nameBeast": "FatherGascoigne",
+  "baseBloodEchos": 8,
+  "dice": 2,
+  "trophy":[1,2]
+}

@@ -26,6 +26,7 @@ public enum NameBeastsEnum {
     TheOneReborn,
     WatchDogOfTheOldLords,
     Ebrietas,
+    FatherGascoigne,
 
     //FINAL BOSSES
     VicarAmelia,

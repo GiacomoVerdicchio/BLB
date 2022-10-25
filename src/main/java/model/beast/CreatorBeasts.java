@@ -14,7 +14,7 @@ import java.nio.file.Path;
 public class CreatorBeasts {
 
     public static int numNormalBeasts=14;
-    public static int numBosses=6;
+    public static int numBosses=7;
     public static int numFinalBosses=5;
 
     public static Beast getRightCard(NameBeastsEnum type)
@@ -49,15 +49,16 @@ public class CreatorBeasts {
                 case Brainsucker -> mapper.readerFor(Brainsucker.class).readValue(str);
                 case Scholars-> mapper.readerFor(Scholars.class).readValue(str);
 
-                //BOSSES
+                //BOSSES (all)
                 case TheWitchOfHemwick ->mapper.readerFor(TheWitchOfHemwick.class).readValue(str);
                 case ClericBeast -> mapper.readerFor(ClericBeast.class).readValue(str);
                 case MartyrLogarius -> mapper.readerFor(MartyrLogarius.class).readValue(str);
                 case TheOneReborn -> mapper.readerFor(TheOneReborn.class).readValue(str);
                 case Ebrietas -> mapper.readerFor(Ebrietas.class).readValue(str);
                 case WatchDogOfTheOldLords -> mapper.readerFor(WatchDogOfTheOldLords.class).readValue(str);
+                case FatherGascoigne->mapper.readerFor(FatherGascoigne.class).readValue(str);
 
-                //FINAL BOSSES
+                //FINAL BOSSES (all constructed)
                 case VicarAmelia -> mapper.readerFor(VicarAmelia.class).readValue(str);
                 case GehrmanTheFirstHunter -> mapper.readerFor(GehrmanTheFirstHunter.class).readValue(str);
                 case MergosWetNurse -> mapper.readerFor(MergosWetNurse.class).readValue(str);
