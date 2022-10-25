@@ -1,0 +1,10 @@
+{
+  "englishName":"The Witch of Hemwick",
+  "otherNameLanguage": ["La strega di Hemwick"],
+  "englishDescription":"Hunters with no Trophies above level 3 claim 1 throphy of their choice if they inflict 1 damage to this",
+  "otherLanguageDescription": ["I cacciatori senza trofei sopra il 3 reclamano 1 trofeo a loro scelta se infliggono 1 danno a questa carta"],
+  "nameBeast": "TheWitchOfHemwick",
+  "baseBloodEchos": 9,
+  "dice": 0,
+  "trophy":[0,1]
+}

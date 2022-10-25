@@ -1,6 +1,6 @@
 package model.upgradeCards;
 
-public enum NameUpgradeEnum {
+public enum NameUpgradeCardEnum {
     SawCleaver,
     HunterAxe,
     HunterPistol,

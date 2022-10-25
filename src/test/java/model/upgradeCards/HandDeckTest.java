@@ -14,7 +14,7 @@ public class HandDeckTest {
     {
         HandDeck deck = new HandDeck();
         DiscardDeck discardDeck=new DiscardDeck();
-        UpgradeCard toothedCleaver=HandDeck.pickCard(NameUpgradeEnum.SawCleaver,deck.getDeck());
+        UpgradeCard toothedCleaver=HandDeck.pickCard(NameUpgradeCardEnum.SawCleaver,deck.getDeck());
         assertEquals(5,deck.getDeck().size());
 
         assertEquals(5, deck.getDeck().size());
@@ -23,7 +23,7 @@ public class HandDeckTest {
         assertEquals(4,deck.getDeck().size());
 
         //Remove by name
-        deck.removeFromDeck(NameUpgradeEnum.HunterAxe);
+        deck.removeFromDeck(NameUpgradeCardEnum.HunterAxe);
         assertEquals(3,deck.getDeck().size());
 
         //Adding again the TootheCleaver
@@ -34,16 +34,16 @@ public class HandDeckTest {
         deck.removeFromDeck(toothedCleaver);
         assertEquals(3,deck.getDeck().size());
 
-        deck.moveToDiscard(NameUpgradeEnum.Transformation,discardDeck);
+        deck.moveToDiscard(NameUpgradeCardEnum.Transformation,discardDeck);
         assertEquals(2,deck.getDeck().size());
         assertEquals(1,discardDeck.getDiscardPile().size());
 
-        UpgradeCard upCard=HandDeck.pickCard(NameUpgradeEnum.Transformation,discardDeck.getDiscardPile());
+        UpgradeCard upCard=HandDeck.pickCard(NameUpgradeCardEnum.Transformation,discardDeck.getDiscardPile());
         assertTrue(discardDeck.getDiscardPile().get(0) instanceof Transformation);
 
         //Remove all the instance of SawCleaver
         deck.removeFromDeck(toothedCleaver);
-        assertNull(deck.pickCard(NameUpgradeEnum.SawCleaver, deck.getDeck()));
+        assertNull(deck.pickCard(NameUpgradeCardEnum.SawCleaver, deck.getDeck()));
 
         //Reset the discard and the deck pile,adding 2 toothedCleaver and moving them in the discard pile
         discardDeck.removeAllFromDiscardPile();
@@ -71,17 +71,16 @@ public class HandDeckTest {
 
         HandDeck deck=new HandDeck();
         DiscardDeck discardDeck=new DiscardDeck();
-        discardDeck.removeAllFromDiscardPile();
 
         assertEquals(5,deck.getDeck().size());
         assertEquals(0,discardDeck.getDiscardPile().size());
 
         deck.removeAllFromDeck();
-        deck.addToDeck(NameUpgradeEnum.SawCleaver);
-        deck.addToDeck(NameUpgradeEnum.SawCleaver);
-        deck.moveToDiscard (HandDeck.pickCard(  NameUpgradeEnum.SawCleaver,deck.getDeck()), discardDeck);
+        deck.addToDeck(NameUpgradeCardEnum.SawCleaver);
+        deck.addToDeck(NameUpgradeCardEnum.SawCleaver);
+        deck.moveToDiscard (HandDeck.pickCard(  NameUpgradeCardEnum.SawCleaver, deck.getDeck()), discardDeck);
 
-        deck.moveToDiscard(NameUpgradeEnum.SawCleaver, discardDeck);
+        deck.moveToDiscard(NameUpgradeCardEnum.SawCleaver, discardDeck);
 
         assertEquals(2,discardDeck.getDiscardPile().size());
         assertEquals(0,deck.getDeck().size());

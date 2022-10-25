@@ -2,12 +2,12 @@ package model.upgradeCards;
 
 import org.junit.Test;
 
-public class CardCreatorTest {
+public class CreatorUpgradeCardTest {
 
     @Test
     public void Test()
     {
-        UpgradeCard card=CardCreator.getRightCard(NameUpgradeEnum.SawCleaver);
+        UpgradeCard card= CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.SawCleaver);
         //System.out.println(card.getNameCode());
     }
 }

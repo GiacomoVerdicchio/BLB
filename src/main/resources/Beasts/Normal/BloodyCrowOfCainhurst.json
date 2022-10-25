@@ -1,0 +1,10 @@
+{
+  "englishName":"Bloody Crow of CainHurst",
+  "otherNameLanguage": ["Corvo di sangue di Cainhurst"],
+  "englishDescription":"",
+  "otherLanguageDescription": ["None"],
+  "nameBeast": "BloodyCrowOfCainhurst",
+  "baseBloodEchos": 6,
+  "dice": 2,
+  "trophy":[1]
+}

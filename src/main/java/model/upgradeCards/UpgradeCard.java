@@ -5,11 +5,12 @@ import java.io.Serializable;
 public abstract class UpgradeCard implements Serializable
 {
     protected String englishName;
+    //TODO andrà modificata in un vettore di stringhe chiamato other language
     protected String italianName;
     protected String englishDescription;
     protected String italianDescription;
 
-    protected NameUpgradeEnum nameCode; //Used to identify easily the type of object
+    protected NameUpgradeCardEnum nameCode; //Used to identify easily the type of object
 
     //public abstract void effect(CurrentGameState cg);
 
@@ -19,7 +20,7 @@ public abstract class UpgradeCard implements Serializable
     public String getItalianDescription() {
         return italianDescription;
     }
-    public NameUpgradeEnum getNameCode() {
+    public NameUpgradeCardEnum getNameCode() {
         return nameCode;
     }
     public String getEnglishName() { return englishName; }

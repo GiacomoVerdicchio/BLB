@@ -11,11 +11,11 @@ public class UpgradeDeck {
     {
         upgradeDeck = new ArrayList<>();
 
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[0]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[1]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[2]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[3]));
-        upgradeDeck.add(CardCreator.getRightCard(NameUpgradeEnum.values()[4]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[0]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[1]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[2]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[3]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[4]));
 
 
         Collections.shuffle(upgradeDeck);

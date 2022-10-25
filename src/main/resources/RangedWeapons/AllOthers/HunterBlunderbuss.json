@@ -1,8 +1,0 @@
-{
-  "englishName":"Hunter Blunderbuss",
-  "italianName": "Archibugio del Cacciatore",
-  "englishDescription":"All hunters who played a melee weapon inflict 1 less damage",
-  "italianDescription": "Tutti i cacciatori che hanno giocato un'arma da mischia infliggono 1 danno in meno",
-  "nameCode": "HunterBlunderbuss",
-  "damage": 2
-}
