@@ -1,21 +1,18 @@
 package model.beast;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import model.Dice;
+
 import java.io.Serializable;
 
-@JsonIgnoreProperties ({"currentEchos","nameBeasts"})
+@JsonIgnoreProperties ({"currentEchos"})
 public abstract class Beast implements Serializable {
 
-    protected String englishName;
-    protected String[] otherNameLanguage;
-
-    protected String englishDescription;
-    protected String [] otherLanguageDescription;
+    protected String[] name;
+    protected String [] description;
 
     protected NameBeastsEnum nameBeast;
     protected int baseBloodEchos;
-    protected Dice dice;
+    protected int dice;
     protected int[] trophy;
 
     protected int currentEchos;
@@ -25,19 +22,14 @@ public abstract class Beast implements Serializable {
         this.currentEchos = currentEchos;
     }
 
-    public String getEnglishName() {
-        return englishName;
+    public String[] getName() {
+        return name;
     }
-    public String[] getOtherNameLanguage() {
-        return otherNameLanguage;
+    public String[] getDescription() {
+        return description;
     }
-    public String[] getOtherLanguageDescription() {
-        return otherLanguageDescription;
-    }
-    public String getEnglishDescription() {
-        return englishDescription;
-    }
-    public Dice getDice() {
+
+    public int getDice() {
         return dice;
     }
     public int[] getTrophy() {

@@ -1,0 +1,8 @@
+{
+  "name": ["Hunter's Minion","Servo del Cacciatore"],
+  "description": [""],
+  "nameBeast": "HunterMinion",
+  "baseBloodEchos": 7,
+  "dice": 1,
+  "trophy":[1]
+}

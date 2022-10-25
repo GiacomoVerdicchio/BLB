@@ -1,6 +1,5 @@
 package model.beast;
 
-import java.io.Serializable;
-
-public class Boss extends Beast implements Serializable {
+public class Boss extends Beast{
+    public void effect(){}
 }

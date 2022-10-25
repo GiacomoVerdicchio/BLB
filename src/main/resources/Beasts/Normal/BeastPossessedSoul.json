@@ -1,0 +1,8 @@
+{
+  "name": ["Beast Possesed Soul","Anima Posseduta"],
+  "description": [""],
+  "nameBeast": "BeastPossessedSoul",
+  "baseBloodEchos": 7,
+  "dice": 1,
+  "trophy":[2]
+}

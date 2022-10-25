@@ -1,0 +1,8 @@
+{
+  "name": ["Beast Patient","Paziente Bestia"],
+  "description": ["When revelead every hunter take 1 damage","Quando rivelato ogni cacciatore prende 1 danno"],
+  "nameBeast": "BeastPatient",
+  "baseBloodEchos": 4,
+  "dice": 0,
+  "trophy":[2]
+}

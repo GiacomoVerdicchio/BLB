@@ -1,0 +1,8 @@
+{
+  "name": ["Vicar Amelia","Vicario Amelia"],
+  "description": ["Hunter's maximum health is 6","La salute massima dei giocatori è pari a 6"],
+  "nameBeast": "VicarAmelia",
+  "baseBloodEchos": 12,
+  "dice": 1,
+  "trophy":[0,1,2]
+}

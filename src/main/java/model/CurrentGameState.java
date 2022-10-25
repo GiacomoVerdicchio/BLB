@@ -1,5 +1,6 @@
 package model;
 
+import model.beast.BeastsDeck;
 import model.upgradeCards.UpgradeDeck;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ public class CurrentGameState {
     private Dice[] dices;
     private ArrayList<Player> players;
     private UpgradeDeck upgradeDeck;
+    private BeastsDeck beastsDeck;
     private static int maxHealth;
 
     //TODO testare uso corretto dices, aggiungere scelta mostri e relative strutture dati

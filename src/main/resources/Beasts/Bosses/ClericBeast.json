@@ -1,0 +1,8 @@
+{
+  "name": ["Cleric Beast","Chierico Belva"],
+  "description": ["Hunters cannot prevent wounds with card effects","I cacciatori non possono prevenire ferite grazie agli effetti delle carte"],
+  "nameBeast": "ClericBeast",
+  "baseBloodEchos": 7,
+  "dice": 2,
+  "trophy":[1,2]
+}

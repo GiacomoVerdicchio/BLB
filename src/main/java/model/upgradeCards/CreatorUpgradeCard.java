@@ -23,12 +23,10 @@ public class CreatorUpgradeCard {
     public static UpgradeCard getRightCard(NameUpgradeCardEnum type)
     {
         UpgradeCard card;
-
-        Path fileName=getPath(type);
         ObjectMapper mapper = new ObjectMapper();
 
         try {
-            String str = Files.readString(fileName);
+            String str = Files.readString(getPath(type));
 
             card = switch (type) {
                 //ARMI DA MISCHIA

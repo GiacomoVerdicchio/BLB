@@ -1,0 +1,9 @@
+{
+  "name": ["Martyr Logarius","Martire Logarius"],
+  "description": ["Every hunter that helps kill this claim 1 additional trophy of any type",
+                    "Ogni cacciatore che aiuta a uccidere questo boss reclama 1 trofeo aggiuntivo di qualsiasi tipo"],
+  "nameBeast": "MartyrLogarius",
+  "baseBloodEchos": 13,
+  "dice": 1,
+  "trophy":[0,1,2]
+}
