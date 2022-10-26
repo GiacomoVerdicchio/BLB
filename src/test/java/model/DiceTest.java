@@ -2,6 +2,9 @@ package model;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class DiceTest {
     Dice d;
 
@@ -15,5 +18,7 @@ public class DiceTest {
     {
         constructDice1();
         //System.out.println("\n"+d.rollDice());
+        int roll=d.rollDice();
+        assertTrue(roll<6 && roll>=0);
     }
 }

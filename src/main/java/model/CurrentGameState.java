@@ -30,34 +30,38 @@ public class CurrentGameState {
         players=new ArrayList<>();
     }
 
+
     public void updateFirstPlayerForAll()
     {
         players.get(indexFirstPlayer).updateFirstPlayer(false);
         players.get( (indexFirstPlayer +1) % numOfPlayers).updateFirstPlayer(true);
+        indexFirstPlayer=(indexFirstPlayer+1)% numOfPlayers;
     }
 
     public void updateMaxHealth(int maxHealth) {
         this.maxHealth = maxHealth;
     }
-
-    public int getMaxHealth() {
-        return maxHealth;
-    }
     public void addPlayers(Player player)
     {
         this.players.add(player);
         numOfPlayers=players.size();
+        //Updato first player solo se non è già stato updatato e se ho inserito abbastanza giocatori da averlo
+        if(players.size()>indexFirstPlayer && !players.get(indexFirstPlayer).getFirstPlayer())
+            players.get(indexFirstPlayer).updateFirstPlayer(true);
     }
     public void addPlayers(String player)
     {
         Player player1=new Player(player,maxHealth);
         this.players.add(player1);
         numOfPlayers=players.size();
+        //Updato first player solo se non è già stato updatato e se ho inserito abbastanza giocatori da averlo
+        if(players.size()>indexFirstPlayer && !players.get(indexFirstPlayer).getFirstPlayer())
+            players.get(indexFirstPlayer).updateFirstPlayer(true);
     }
-    public UpgradeDeck getUpgradeDeck() {
-        return upgradeDeck;
-    }
-    public BeastsDeck getBeastsDeck() {
-        return beastsDeck;
-    }
+
+
+    public int getMaxHealth() { return maxHealth; }
+    public int getIndexFirstPlayer(){return indexFirstPlayer;}
+    public UpgradeDeck getUpgradeDeck() { return upgradeDeck; }
+    public BeastsDeck getBeastsDeck() { return beastsDeck; }
 }

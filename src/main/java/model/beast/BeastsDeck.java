@@ -29,7 +29,6 @@ public class BeastsDeck {
         beastsDeck.remove(10);
 
         Collections.shuffle(beastsDeck);
-        System.out.println("fiasd");
     }
 
 

@@ -61,8 +61,10 @@ public class Player {
     public ArrayList<UpgradeCard> getPlayedCard() {
         return playedCard;
     }
-
     public String getName() {
         return name;
+    }
+    public boolean getFirstPlayer() {
+        return firstPlayer;
     }
 }
