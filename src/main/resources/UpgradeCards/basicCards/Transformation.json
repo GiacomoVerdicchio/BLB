@@ -1,7 +1,6 @@
 {
-  "englishName":"Transformation",
-  "italianName": "Trasformazione",
-  "englishDescription":"After seeing all Hunter's revelead cards, choose a melee or ranged weapon from your hand and reveal it",
-  "italianDescription": "Dopo aver visto tutte le carte degli altri cacciatori, scegli un' arma dalla distanza o da mischia dalla tua mano e rivelala",
+  "name":["Transformation","Trasformazione"],
+  "description":["After seeing all Hunter's revelead cards, choose a melee or ranged weapon from your hand and reveal it",
+    "Dopo aver visto tutte le carte degli altri cacciatori, scegli un' arma dalla distanza o da mischia dalla tua mano e rivelala"],
   "nameCode": "Transformation"
 }

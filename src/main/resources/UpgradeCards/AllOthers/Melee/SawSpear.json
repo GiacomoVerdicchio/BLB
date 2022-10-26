@@ -1,8 +1,7 @@
 {
-  "englishName":"Saw Spear",
-  "italianName": "Sega lancia",
-  "englishDescription":"Ypu inflict +1 demage for each point of damage your hunter takes this round",
-  "italianDescription": "Infliggi +1 danno per ogni punto di danno che il tuo cacciatore prenderà questo turno",
+  "name":["Saw Spear","Sega lancia"],
+  "description":["You inflict +1 demage for each point of damage your hunter takes this round",
+    "Infliggi +1 danno per ogni punto di danno che il tuo cacciatore prenderà questo turno"],
   "nameCode": "SawSpear",
   "damage": 2
 }

@@ -29,20 +29,21 @@ public class CreatorUpgradeCard {
             String str = Files.readString(getPath(type));
 
             card = switch (type) {
-                //ARMI DA MISCHIA
                 case SawCleaver -> mapper.readerFor(SawCleaver.class).readValue(str);
                 case HunterAxe -> mapper.readerFor(HunterAxe.class).readValue(str);
+                case HunterPistol -> mapper.readerFor(HunterPistol.class).readValue(str);
+                case HunterDream -> mapper.readerFor(HunterDream.class).readValue(str);
+                case Transformation -> mapper.readerFor(Transformation.class).readValue(str);
+
+                //ARMI DA MISCHIA
                 case SawSpear -> mapper.readerFor(SawSpear.class).readValue(str);
                 case ThreadedCane -> mapper.readerFor(ThreadedCane.class).readValue(str);
 
                 //ARMI RANGED
-                case HunterPistol -> mapper.readerFor(HunterPistol.class).readValue(str);
                 case FlameSprayer -> mapper.readerFor(FlameSprayer.class).readValue(str);
                 case HunterBlunderbuss -> mapper.readerFor(HunterBlunderbuss.class).readValue(str);
 
                 //UTILITES
-                case HunterDream -> mapper.readerFor(HunterDream.class).readValue(str);
-                case Transformation -> mapper.readerFor(Transformation.class).readValue(str);
                 case BloodVial -> mapper.readerFor(BloodVial.class).readValue(str);
 
 
@@ -63,8 +64,8 @@ public class CreatorUpgradeCard {
         else if(type.ordinal()<numberOfMeleeWeapons+5)
             return Path.of("src/main/resources/UpgradeCards/AllOthers/Melee/"+type+".json");
         else if (type.ordinal()<(numberOfMeleeWeapons+numberOfRangedWeapons+5))
-            return Path.of("src/main/resources/UpgradeCards/AllOthers/RangedWeapons/"+type+".json");
+            return Path.of("src/main/resources/UpgradeCards/AllOthers/Ranged/"+type+".json");
         else
-            return Path.of("src/main/resources/UpgradeCards/AllOthers/UtilityCards/"+type+".json");
+            return Path.of("src/main/resources/UpgradeCards/AllOthers/Utility/"+type+".json");
     }
 }

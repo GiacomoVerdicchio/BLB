@@ -1,8 +1,6 @@
 {
-  "englishName": "Saw Cleaver",
-  "italianName": "Mannaia Denatata",
-  "englishDescription": "b",
-  "italianDescription": "b",
+  "name": ["Saw Cleaver", "Mannaia Denatata"],
+  "description":[""],
   "nameCode": "SawCleaver",
   "damage": 1
 }

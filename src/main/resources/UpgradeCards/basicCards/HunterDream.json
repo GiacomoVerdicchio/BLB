@@ -1,7 +1,7 @@
 {
-  "englishName":"Hunter Dream",
-  "italianName": "Sogno del Cacciatore",
-  "englishDescription":"Any damage you take this round is halved .... Then bank your collected blood, reclaim all used Action cards, gain a new upgrade and rest to full health",
-  "italianDescription": "Ogni danno che prendi questo round viene dimezzato. Dopodiché deposit il sangue raccolto, reclama tutte le carte azione, guadagna una nuova carta miglioramento e riposa per ricaricare al massimo la vita",
+  "name":["Hunter Dream","Sogno del Cacciatore"],
+  "description":["Any damage you take this round is halved .... Then bank your collected blood, reclaim all used Action cards, gain a new upgrade and rest to full health",
+    "Ogni danno che prendi questo round viene dimezzato. Dopodiché deposit il sangue raccolto, reclama tutte le carte azione, guadagna una nuova carta miglioramento e riposa per ricaricare al massimo la vita"
+                ],
   "nameCode": "HunterDream"
 }

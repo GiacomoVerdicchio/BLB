@@ -1,8 +1,7 @@
 {
-  "englishName":"Threaded Cane",
-  "italianName": "Bastone Filettato",
-  "englishDescription":"If the monster doesn't not have all the blood you should collect, take the resto from the reserve (only claim a Trophy if you claim at least 1 blood from the monster)",
-  "italianDescription": "Se il mostro non ha tutti gli echi del sangue che dovresti reclamare, prendi il resto della riserva (prendi solo un trofeo se hai reclamato almeno 1 eco del sangue dal mostro) ",
+  "name":["Threaded Cane","Bastone Filettato"],
+  "description":["If the monster doesn't not have all the blood you should collect, take the resto from the reserve (only claim a Trophy if you claim at least 1 blood from the monster)",
+    "Se il mostro non ha tutti gli echi del sangue che dovresti reclamare, prendi il resto della riserva (prendi solo un trofeo se hai reclamato almeno 1 eco del sangue dal mostro) "],
   "nameCode": "ThreadedCane",
   "damage": 2
 }

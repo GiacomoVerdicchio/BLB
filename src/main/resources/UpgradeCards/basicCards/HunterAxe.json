@@ -1,8 +1,6 @@
 {
-  "englishName":"Hunter Axe",
-  "italianName": "Ascia del Caccciatore",
-  "englishDescription":"b",
-  "italianDescription": "b",
+  "name":["Hunter Axe","Ascia del Caccciatore"],
+  "description":[""],
   "nameCode": "HunterAxe",
   "damage": 2
 }

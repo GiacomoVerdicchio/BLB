@@ -25,8 +25,9 @@ public class CurrentGameState {
             players.add(new Player());
 
         players.get(0).updateFirstPlayer(true);
-        upgradeDeck=new UpgradeDeck();
 
+        upgradeDeck=new UpgradeDeck();
+        beastsDeck = new BeastsDeck();
     }
 
     public static int getMaxHealth() {

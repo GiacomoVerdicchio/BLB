@@ -11,17 +11,16 @@ public class UpgradeDeck {
     {
         upgradeDeck = new ArrayList<>();
 
-        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[0]));
-        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[1]));
-        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[2]));
-        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[3]));
-        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[4]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[5]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[6]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[7]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[8]));
+        upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[9]));
 
 
         Collections.shuffle(upgradeDeck);
 
         upgradeBoard = new ArrayList<>();
-
     }
 
     //TODO testare questa funzione
@@ -33,6 +32,19 @@ public class UpgradeDeck {
             upgradeDeck.remove(0);
         }
     }
+
+    public void refill(int numPlayer)
+    {
+        while(upgradeBoard.size()<numPlayer)
+        {
+            upgradeBoard.add(upgradeDeck.get(0));
+            upgradeDeck.remove(0);
+        }
+    }
+
+    public void add(int index) { upgradeDeck.add(CreatorUpgradeCard.getRightCard(NameUpgradeCardEnum.values()[index])); }
+    public void add(NameUpgradeCardEnum name) { upgradeDeck.add(CreatorUpgradeCard.getRightCard(name)); }
+
     public ArrayList<UpgradeCard> getUpgradeDeck(){ return upgradeDeck;}
     public ArrayList<UpgradeCard> getUpgradeBoard() { return upgradeBoard; }
 }
