@@ -1,0 +1,6 @@
+{
+  "name":["Hunter Blunderbuss","Archibugio del Cacciatore"],
+  "description":["All hunters who played a melee weapon inflict 1 less damage","Tutti i cacciatori che hanno giocato un'arma da mischia infliggono 1 danno in meno"],
+  "nameCode": "HunterBlunderbuss",
+  "damage": 2
+}
