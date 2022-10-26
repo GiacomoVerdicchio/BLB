@@ -11,7 +11,6 @@ public class BeastsDeck {
     {
         beastsDeck =new ArrayList<>();
 
-        //refill of normal beasts
         ArrayList<Beast> normalBeasts1=constructNormalPartOfDeck(7,13,0);
         ArrayList<Beast> bosses=constructNormalPartOfDeck(3,20,14);
         ArrayList<Beast> finalBeast=constructNormalPartOfDeck(1,25,22);
@@ -32,6 +31,8 @@ public class BeastsDeck {
         Collections.shuffle(beastsDeck);
         System.out.println("fiasd");
     }
+
+
     private ArrayList<Beast> constructNormalPartOfDeck(int maxNumDeck, int maxRand, int minRand)
     {
         ArrayList<Beast> deck=new ArrayList<>();

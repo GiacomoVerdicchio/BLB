@@ -71,6 +71,9 @@ public class CardCreatorTest {
         Beast cagnooo= CreatorBeasts.getRightCard(NameBeastsEnum.WatchDogOfTheOldLords);
         System.out.println(cagnooo.getNameBeastsEnum()+" : "+ cagnooo.getName()[0]+" "+ cagnooo.getBaseBloodEchos()+" dice:"+cagnooo.getDice());
 
+        Beast ebrii= CreatorBeasts.getRightCard(NameBeastsEnum.Ebrietas);
+        System.out.println(ebrii.getNameBeastsEnum()+" : "+ ebrii.getNameBeastsEnum()+" "+ ebrii.getBaseBloodEchos());
+
         Beast padre= CreatorBeasts.getRightCard(NameBeastsEnum.FatherGascoigne);
         System.out.println(padre.getNameBeastsEnum()+" : "+ padre.getName()[0]+" "+ padre.getBaseBloodEchos()+" dice:"+padre.getDice());
 
