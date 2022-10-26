@@ -62,6 +62,10 @@ public class HandDeckTest {
         deck.removeAllFromDeck();
         assertEquals(0,deck.getDeck().size());
 
+        deck.addToDeck(NameUpgradeCardEnum.SawCleaver);
+        assertEquals(1,deck.getDeck().size());
+        deck.removeFromDeck(0);
+        assertEquals(0,deck.getDeck().size());
     }
 
 

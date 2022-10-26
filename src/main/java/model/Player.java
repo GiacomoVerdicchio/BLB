@@ -12,17 +12,20 @@ public class Player {
     private HandDeck handDeck;
     private boolean firstPlayer;
     private ArrayList<UpgradeCard> playedCard;
+    private String name;
 
     private int life;
 
-    public Player()
+    public Player(String name,int maxHealth)
     {
         firstPlayer=false;
-        life=CurrentGameState.getMaxHealth();
+        life=maxHealth;
         pointBoard=new PointBoard();
         discardDeck=new DiscardDeck();
         handDeck=new HandDeck();
         playedCard=new ArrayList<>();
+        this.name=name;
+        firstPlayer=false;
     }
 
 
@@ -57,5 +60,9 @@ public class Player {
     }
     public ArrayList<UpgradeCard> getPlayedCard() {
         return playedCard;
+    }
+
+    public String getName() {
+        return name;
     }
 }

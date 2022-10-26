@@ -8,12 +8,14 @@ import java.util.ArrayList;
 public class CurrentGameState {
     private Dice[] dices;
     private ArrayList<Player> players;
+    private int numOfPlayers;
     private UpgradeDeck upgradeDeck;
     private BeastsDeck beastsDeck;
-    private static int maxHealth;
+    private int maxHealth;
+    private int indexFirstPlayer;
 
     //TODO testare uso corretto dices, aggiungere scelta mostri e relative strutture dati
-    public CurrentGameState(int playerNum)
+    public CurrentGameState()
     {
         maxHealth=8;
         dices=new Dice[3];
@@ -21,24 +23,41 @@ public class CurrentGameState {
         dices[1]=new Dice(0,1,2,2,3,3,false,false,true,true,true,false);
         dices[2]=new Dice(0,1,2,3,3,3,false,false,false,true,true,false);
 
-        for(int i=0;i<playerNum;i++)
-            players.add(new Player());
-
-        players.get(0).updateFirstPlayer(true);
-
+        indexFirstPlayer =0;
+        numOfPlayers=0;
         upgradeDeck=new UpgradeDeck();
         beastsDeck = new BeastsDeck();
+        players=new ArrayList<>();
     }
 
-    public static int getMaxHealth() {
+    public void updateFirstPlayerForAll()
+    {
+        players.get(indexFirstPlayer).updateFirstPlayer(false);
+        players.get( (indexFirstPlayer +1) % numOfPlayers).updateFirstPlayer(true);
+    }
+
+    public void updateMaxHealth(int maxHealth) {
+        this.maxHealth = maxHealth;
+    }
+
+    public int getMaxHealth() {
         return maxHealth;
     }
-    public static void updateMaxHealth(int maxHealth) {
-        CurrentGameState.maxHealth = maxHealth;
-    }
-
     public void addPlayers(Player player)
     {
         this.players.add(player);
+        numOfPlayers=players.size();
+    }
+    public void addPlayers(String player)
+    {
+        Player player1=new Player(player,maxHealth);
+        this.players.add(player1);
+        numOfPlayers=players.size();
+    }
+    public UpgradeDeck getUpgradeDeck() {
+        return upgradeDeck;
+    }
+    public BeastsDeck getBeastsDeck() {
+        return beastsDeck;
     }
 }
